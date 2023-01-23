@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Project 1 </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+							<header id="header">
+								<br>
+								<a href="02_vefsida.html" class="logo"><strong> Project 1 </strong> - The Making of this website in HTML</a>
+
+							</header>
+
+							<!-- Content -->
+								<section>
+									<header class="noline">
+										<h1>Project 1 </h1>
+										<p>The objective of this project was to make a website using HTML and/or CSS and upload it using GitHub and Gitbash. </p>
+									</header>
+									<h2> Preparation</h2>
+									<p>I have no prior experience in HTML or CSS programming so I decided to use a template from the website <a href="https://html5up.net/">html5up.net </a> that I could build on. The template I chose is called Editorial, the link to it can be found <a href="https://html5up.net/editorial"> here </a>. The reason why I chose this template was because I liked the side banner it provided.</p>
+									<img src="/V01_vefsida/images/Editorial.png" 
+	 										style="object-fit:contain;
+            								width:80%;
+            								height:auto;
+           		 							border: solid 3px #CCC"/> <br><br>
+									
+									<p>When I had downloaded this template I saved it locally to my computer and opened it with Visual Studio Code. I use VSCode for all of my coding projects and I wanted to do the same with my future HTML projects. To make VSCode easy to use for HTML I downloaded the <a href=" https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview Extension</a> to VSCode. This extension lets you preview your work in a browser and updates the website automatically while you work on it. </p>
+										<img src = "images/VSCode.png"
+											style="object-fit:contain;
+												width:80%;
+												height:auto;
+												border:solid 3px #CCC"/></section>
+
+								<section>
+									<h2 id="personalizing"> Personalizing the website </h2>
+									<p> As I've mentioned, I had no former experience using HTML so before I started working on the project I read through this <a href="https://www.w3schools.com/html/html_basic.asp"> article from w3schools </a> to understand the basics of HTML.
+									Then I started personalizing the template. </p>
+									<h3 id="formatting"> Formatting</h3>
+									<p>Here are some things I did to format the text and images on the website</p>
+								<dl>
+									<!-- ADD IMAGES-->
+									<dt><h4 id="images">Adding Images </h4></dt>
+										<dd>
+											<p>I wanted to scale the images so they'd fit the size of the screen used to view the website and add a boarder around them. I did that using the code you can see on the side. </p>
+												<pre class="line-numbers"><code class="language-html">&lt;img src = "images/VSCode.png"
+	style="object-fit:contain;
+		width:80%;
+		height:auto;
+		border:solid 3px #CCC"/></code></pre>
+									<!--JUSTIFYING TEXT-->		
+									</dd>
+
+									<dt><h4>Justifying text </h4></dt>
+									<dd>
+										<p >The template had the text automatically set to left aligned text. I thought it would look cleaner to make the text justified. To do so I changed the code to the following in the main.css file. </p>
+										<pre><code class="language-css">div {
+	text-align: justify;
+	text-justify: inter-word;
+	}
+										</code></pre>
+									
+									</dd>
+
+									<!-- DISPLAYING TEXT-->
+									<dt><h4 id="disp code">Displaying Code </h4></dt>
+									<dd>
+										<p>I had some trouble with displaying html code. I got all the information I needed on <a href=https://www.campuslife.co.in/Html/how-to-show-coding-in-html.php#:~:text=tag%20is%20use,coding%20on%20our%20HTML%20webpage. >this website </a>. I used the following code: </p>
+											<pre><code>&lt;pre>&lgt;code> ...... &lt;/code> &lt;/pre></code></pre> 
+									</dd>
+
+									<!-- Resume-->
+									<dt><h4 id="disp code">Embedding a pdf </h4></dt>
+									<dd>
+										<p> For my resume page I wanted to embed my current resume into the page without it redirecting the viewer to another website. I had a lot of trouble with trying to do so. I tried googling several different methods and none of them worked. I even asked ChatGPT and it gave me the same methods I had already tried. The following shows the most popular method I found, so hopefully this works for you. </p>  
+											<img src = "images/embed_pdf.png"
+											style="object-fit:contain;
+												width:80%;
+												height:auto;
+												border:solid 3px #CCC"/>
+										<p>When I used this method, a window poped up asking me to save my file to the location I had specified instead of selecting it. If I clicked okay it overwrited the original file with a blank file.</p>
+											<img src = "images/saving_pdf.png"
+											style="object-fit:contain;
+												width:50%;
+												height:auto;
+												border:solid 3px #CCC"/>
+										<p>A way around this was to upload my CV to Google Drive and copy the link to share it. In this step it's important to change the setting so that anyone with the link can open it.</p>
+											<img src = "images/googledrive.png"
+											style="object-fit:contain;
+												width:80%;
+												height:auto;
+												border:solid 3px #CCC"/>
+										<p>Then I used the same code from above, <pre><code>&lt; iframe src="insert the google drive link here"></code></pre> To make sure this method works you'll have to change the ending of the link from ../view?usp=sharing to .../preview . A more detailed description of this method can be found <a href="https://www.wonderplugin.com/wordpress-lightbox/how-to-open-a-pdf-file-hosted-on-google-drive-in-a-wordpress-lightbox/">here</a></p>.
+									</dd>
+								</dl>
+								<h3 id="layout"> Changing the Layout </h3>
+								<p>I have a very fixed idea on how I want the website to look. I want the sidebanner to be fixed on the side. I haven't been able to do that yet but hopefully I'll be able to figure it out in the upcoming weeks, stay tuned!</p>
+								</section>
+
+								<section>
+									<h2>Uploading the website to GitHub </h2>	
+									<p>I started by downloading Git from <a href="https://git-scm.com/">this </a> website. Then I opened the terminal and went to the directory of where my files for the website are stored. I did that by using the command</p>
+									<pre><code>cd C:Users/Documents/GitHub/VEL608G/proj1</code></pre>
+									<p>Then I went to GitHub and created a new respiratory and filled in the following.</p>
+										<img src = "images/GitHub_resp.png"
+										style="object-fit:contain;
+											width:80%;
+											height:auto;
+											border:solid 3px #CCC"/>
+									<p>and after creating the respiratory I was directed to the following page and copied the code as shown and pasted it to git.</p>
+										<img src = "images/copiedcode.png"
+										style="object-fit:contain;
+											width:80%;
+											height:auto;
+											border:solid 3px #CCC"/>
+											
+
+
+
+
+								</section>
+
+
+
+
+							<p>orð sem ég notaði til að googla: 
+								how to scale pictures in html
+								displaying html code in a html file https://www.campuslife.co.in/Html/how-to-show-coding-in-html.php#:~:text=tag%20is%20use,coding%20on%20our%20HTML%20webpage.
+
+								
+							</p>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h1 align="left">Helga Maria Magnusdottir</h1>
+									<p align="left">Student in Mechanical Engineering</p>
+								</header>
+								<ul>
+									<li><a href="00_index.html">Home </a></li>
+									<li><a href="03_portfolio.html">View full portfolio </a></li>
+								</ul>
+							</nav>
+						<!-- Projects in the Side Banner!! -->
+							<section>
+								<header class="major">
+									<h3>Projects</h3>
+								</header>
+								<div class="mini-posts">
+									<article>
+										<a href="02_vefsida.html" class="image"><img src="images/cover_proj1.png" alt="" /></a>
+										<h2> Project 1 </h2>
+										<p>The making of this website with HTML </p>
+									</article>
+									<article>
+										<a href="05_proj2.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
+										<h2>Project 2</h2>
+										<p> This project is still in progress, will be posted on the 27th of February. </p>
+									</article>
+								</div>
+							</section>
+
+						<!-- Section -->
+						<section>
+							<header class="major">
+								<h3>Get in touch</h3>
+							</header>
+							<p> If there are any questions or concerns, please reach out! </p>
+								<ul class="contact">
+								<li class="icon solid fa-envelope"><a href="#">hmm18@hi.is</a></li>
+								<li class="icon solid fa-envelope"><a href="#">helgamariam@gmail.com</a></li>
+							</ul>
+						</section>
+							
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">All rights reserved. Template from: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
+					</div>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
