@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Project 2 </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+							<header id="header">
+								<br>
+								<a href="index.html" class="logo"><strong> Project 3 </strong> - 3D printing </a>
+
+							</header>
+
+
+
+							<!-- Content -->
+								<section>
+                                    
+									<header class="noline">
+										<h1>Project 3 </h1>
+										<p>The objective of this project was to design a 3D model and print it using a 3D printer. 
+                                            The model could not be produced using subtractive manufacturing methods. We were also meant to make a 3D scan of an object using photogrammetry </p>
+									</header>
+                                    <span class="image right"><img src="images/V02/3d_final.png" style="width:400px;height:auto;border:solid 1px #CCC""></span>
+                                    <div>
+                                        <section><h3>Main topics: </h3>
+                                        <ul class="actions"><li><a href="#01_Inspo" class="button">Seeking Inspiration</a></li></ul>
+                                        <ul class="actions"><li><a href="#02_drawing_in_CAD" class="button">Desining in Fusion </a></li></ul>
+                                        <ul class="actions"><li><a href="#03_exporting" class="button"> Exporting to Prusa Slicer </a></li></ul>
+                                        </div>
+                                    <div id="01_Inspo">
+                                        <h2> Inspiration </h2>
+                                        <p> Like the pressfit model, I wanted to make something that I could use. I went on pinterest again to get some inspiration. I decided to make a toothbrush holder. 
+                                            Here are some ideas that I got inspiration from.
+                                        </p>
+                                    
+                                                <div class="row gtr-50 gtr-uniform">
+                                                <div class="grid-container">
+                                                
+                                                <div class="col-4"><span class="image fit"><img src="images/V02/Inspo/toothbrush1.jpg"></span></div>
+                                                <div class="col-4"><span class="image fit"><img src="images/V02/Inspo/tooth2.jpg" alt="" /></span></div>
+                                                <div class="col-4"><span class="image fit"><img src="images/V02/Inspo/tooth3.jpg" alt="" /></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                <div id="02_drawing_in_CAD">
+                                    <h2>Design of the model</h2>
+                                    <h3>Softwares I used</h3>
+                                    <dl> For this project I used <a href=https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&support=null&tab=subscription&plc=F360>Fusion 360</a> 
+                                        for desiging the model and <a href=https://www.prusa3d.com/page/prusaslicer_424>Prusa Slicer</a> to export the model into the correct file format.</p>
+                                    
+                                    
+                                    <h3>1 - Drawing the base</h3>
+                                        <p>I started by creating a sketch and drawing two circles and a rectangle that was tangent to both of them. Then I trimmed the vertical 
+                                            sides of the rectangle and the parts of the circles that were on the inside. Then I offsetted the shape by the wall thickness that I had defined
+                                            as a user parameter. Then I extruded the shape and made the extrusion symmetric so that the middle of the extrusion would also be the center of the 
+                                            working plane. </p>
+
+                                        <div class="row gtr-50 gtr-uniform">
+                                            <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/3vol1.png" alt="" /></span></div>
+                                            <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/3vol2.png" alt="" /></span></div>
+                                        </div>
+                                        
+                                    <h3>2 - Making evenly spaced holes</h3>
+                                    <p>Then I turned the shape a little bit and created a new sketch ontop of it. There I drew a circle and extruded a cut trough the top wall
+                                        and some of the bottom wall so the toothbrush would be more straight when inside the holder. I then added a pattern of the hole I just made
+                                        which wen symmetrically on opposite sides and created two new holes. I then mirrored the pattern around the center line of the object. That left
+                                        with six evenly spaced holes for the toothbrushes. </p>
+                                        <div class="row gtr-50 gtr-uniform">
+                                            <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/3vol3.png" alt="" /></span></div>
+                                            <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/3vol4.png" alt="" /></span></div>
+                                            <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/3vol5.png" alt="" /></span></div>
+
+                                        </div>
+
+                                    <h3>3 - Adding Chamfers and fillets on the sides</h3>
+                                    <p> After adding the holes, I increased the wall thickness in the user parameters. Then I added a chamfer on the inner edge of the walls. I wanted the chamfer to
+                                         be clearly visible and big which is why I had to increase the wall thickness. I also added smaller chamfers and fillets on the edges of the holes.</p>
+                                    <div class="row gtr-50 gtr-uniform">
+                                        <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/3vol6.png" alt="" /></span></div>
+                                        <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/3vol10.png" alt="" /></span></div>
+
+                                    </div>
+
+                                    <h3>4 - Improving the Design </h3>
+                                    <p>I realised that the holes on the bottom needed to go all the way through the bottom wall because otherwise water from the brushes would accumulate inside the toothbrush holder. 
+                                    I made that modification by changing the extrusion length of the holes. I got the idea of adding a spot for toothpaste so I created a new sketch with a 
+                                    bigger hole. To do so I had to adjust the length of the model because otherwise it wouldn't fit. I also had the idea to add a gap from the edge to 
+                                    the holes so you could easily be able to slide the toothbrushes into place. </p>
+                                   <div class="row gtr-50 gtr-uniform">
+                                        <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/col10.png" alt="" /></span></div>
+                                        <div class="col-4"><span class="image fit"><img src="images/V02/Tannburstastandur/col14.png" alt="" /></span></div>
+                                    </div>
+
+                                    These modifications made me realise that the previous model was better. By adding a place for the toothpaste I had to expand the toothbrush holder by a lot
+                                    and I didnðt like the look of it as much as before. Furthermore, I didn't like the sliding feature for the holes, in my opinion my design looked better when
+                                     it was symmetric so I decided to go back a few steps in the model and continue working with an old version of the model. I did that by going through
+                                     the design process in the bottom banner of Fusion and delete the most recent features. 
+
+
+                                        
+                                    <div id="03_exporting">
+                                        <h3>5 - Exporting the design to Prusa Slicer </h3>
+                                        <p>When I was fully satisfied with my design I exported the design and imported it in the Prusa Slicer application. To import the document
+                                            I selected the square with the plus sign and there I could choose my model. To avoid using supports when printng I turned the model to the side.
+                                            I chose the infil to be 15% and then I pressed <b>SLICE NOW</b>. My part was quite big and the Prusa Slicer estimated that it would need 122g of plastic
+                                            to be able to print it. As the maximum plastic we could use was 100g I had to change my design a little bit. 
+                                            I went back to Fusion, made some changes to the user parameters and uploaded the model into the Prusa Slicer again. After those modifications I was able to
+                                            decrease the weight  to 98.7 g of plastic. Then I saved the file on a SD card and plugged it into the Prusa 3D printer. 
+                                        
+                                        <h3>Final thoughts</h3>
+                                        <p>I am very happy with how this project turned out, it's a bit bigger than I expected but I like it. I am really happy with my design and the 3D printer did a very good job with printing it. </p>
+                                        <img src = "images/V02/Tannburstastandur/final_tannb.jpg"
+                                                style="object-fit:contain;
+                                                    width:40%;
+                                                    height:auto;"/></section>
+                                        </div>
+
+                                </section>
+                                  
+                        <div>
+                        <section>
+                            <h3>Look-ups: </h3> 
+                            <ul class="actions">
+                                <li><a href="#" class="button primary"> Measurements of a toothbrush </a></li>
+                                <li><a href="#" class="button">Useful 3D printed projects</a></li>
+                            </ul>
+                        </section>
+                        </div>
+                    </div>
+                </div>
+
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h1 align="left">Helga Maria Magnusdottir</h1>
+									<p align="left">Student in Mechanical Engineering</p>
+								</header>
+								<ul>
+									<li><a href="index.html">Home </a></li>
+									<li><a href="03_portfolio.html">View full portfolio </a></li>
+								</ul>
+							</nav>
+						<!-- Projects in the Side Banner!! -->
+						<section>
+							<header class="major">
+								<h3>Main Projects</h3>
+							</header>
+							<div class="mini-posts">
+								<article>
+									<a href="02_vefsida.html" class="image fit"><img src="images/cover_proj1.png" alt="" /></a>
+									<h2> Project 1 </h2>
+									<p>The making of this website with HTML </p>
+								</article>
+								<article>
+									<a href="#" class="image fit"><img src="images/V02/kaka_cover.jpg" alt="" /></a>
+									<h2>Project 2</h2>
+									<p> Design a press fit model and print using a laser cutter </p>
+								</article>
+								<article>
+									<a href="#" class="image fit"><img src="images/V02/tannb_cover.jpg" alt="" /></a>
+									<h2>Project 3</h2>
+									<p> Design a 3D model and print it using a 3D printer</p>
+								</article>
+							</div>
+						</section>
+
+						<!-- Section -->
+						<section>
+							<header class="major">
+								<h3>Get in touch</h3>
+							</header>
+							<p> If there are any questions or concerns, please reach out! </p>
+								<ul class="contact">
+								<li class="icon solid fa-envelope"><a href="#">hmm18@hi.is</a></li>
+								<li class="icon solid fa-envelope"><a href="#">helgamariam@gmail.com</a></li>
+							</ul>
+						</section>
+							
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">All rights reserved. Template from: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

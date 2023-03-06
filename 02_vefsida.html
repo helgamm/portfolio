@@ -19,7 +19,7 @@
 							<!-- Header -->
 							<header id="header">
 								<br>
-								<a href="02_vefsida.html" class="logo"><strong> Project 1 </strong> - The Making of this website in HTML</a>
+								<a href="index.html" class="logo"><strong> Project 1 </strong> - The Making of this website in HTML</a>
 
 							</header>
 
@@ -29,22 +29,35 @@
 										<h1>Project 1 </h1>
 										<p>The objective of this project was to make a website using HTML and/or CSS and upload it using GitHub and Gitbash. </p>
 									</header>
+
+									<section><h3>Main topics: </h3> 
+										<ul class="actions">
+											<li><a href="#01_preparation" class="button">Choosing a template </a></li>
+											<li><a href="#02_Formatting" class="button">Formatting the webside </a></li>
+											<li><a href="#03_uploading" class="button"> Uploading website onto GitHub </a></li>
+											<li><a href="#04_updating" class="button"> Updating the website </a></li>
+										</ul>
+									
+									</section>
+
+								<div id="01_preparation">
 									<h2> Preparation</h2>
 									<p>I have no prior experience in HTML or CSS programming so I decided to use a template from the website <a href="https://html5up.net/">html5up.net </a> that I could build on. The template I chose is called Editorial, the link to it can be found <a href="https://html5up.net/editorial"> here </a>. The reason why I chose this template was because I liked the side banner it provided.</p>
-									<img src="/V01_vefsida/images/Editorial.png" 
+									<img src="/images/Editorial.png" 
 	 										style="object-fit:contain;
-            								width:80%;
+            								width:100%;
             								height:auto;
            		 							border: solid 3px #CCC"/> <br><br>
 									
 									<p>When I had downloaded this template I saved it locally to my computer and opened it with Visual Studio Code. I use VSCode for all of my coding projects and I wanted to do the same with my future HTML projects. To make VSCode easy to use for HTML I downloaded the <a href=" https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview Extension</a> to VSCode. This extension lets you preview your work in a browser and updates the website automatically while you work on it. </p>
 										<img src = "images/VSCode.png"
 											style="object-fit:contain;
-												width:80%;
+												width:100%;
 												height:auto;
-												border:solid 3px #CCC"/></section>
+												border:solid 3px #CCC"/>
+									</div>
 
-								<section>
+								<div id = "02_Formatting">
 									<h2 id="personalizing"> Personalizing the website </h2>
 									<p> As I've mentioned, I had no former experience using HTML so before I started working on the project I read through this <a href="https://www.w3schools.com/html/html_basic.asp"> article from w3schools </a> to understand the basics of HTML.
 									Then I started personalizing the template. </p>
@@ -54,10 +67,10 @@
 									<!-- ADD IMAGES-->
 									<dt><h4 id="images">Adding Images </h4></dt>
 										<dd>
-											<p>I wanted to scale the images so they'd fit the size of the screen used to view the website and add a boarder around them. I did that using the code you can see on the side. </p>
+											<p>I wanted to add a border to the images and have the option of scaling them. I did that using the following code: </p>
 												<pre class="line-numbers"><code class="language-html">&lt;img src = "images/VSCode.png"
 	style="object-fit:contain;
-		width:80%;
+		width:100%;
 		height:auto;
 		border:solid 3px #CCC"/></code></pre>
 									<!--JUSTIFYING TEXT-->		
@@ -84,64 +97,131 @@
 									<!-- Resume-->
 									<dt><h4 id="disp code">Embedding a pdf </h4></dt>
 									<dd>
-										<p> For my resume page I wanted to embed my current resume into the page without it redirecting the viewer to another website. I had a lot of trouble with trying to do so. I tried googling several different methods and none of them worked. I even asked ChatGPT and it gave me the same methods I had already tried. The following shows the most popular method I found, so hopefully this works for you. </p>  
+										<p> For my resume page I wanted to embed my current resume into the page without it redirecting the viewer to another website. 
+											I had a lot of trouble with trying to do so. I tried googling several different methods and none of them worked.
+											 I even asked ChatGPT and it gave me the same methods I had already tried. The following shows the most popular method I found, 
+											 so hopefully this works for you. </p>  
 											<img src = "images/embed_pdf.png"
 											style="object-fit:contain;
-												width:80%;
+												width:100%;
 												height:auto;
 												border:solid 3px #CCC"/>
-										<p>When I used this method, a window poped up asking me to save my file to the location I had specified instead of selecting it. If I clicked okay it overwrited the original file with a blank file.</p>
+										<p>When I used this method, a window poped up asking me to save my file to the location I had specified instead of selecting it. 
+											If I clicked okay it overwrited the original file with a blank file.</p>
 											<img src = "images/saving_pdf.png"
 											style="object-fit:contain;
 												width:50%;
 												height:auto;
 												border:solid 3px #CCC"/>
-										<p>A way around this was to upload my CV to Google Drive and copy the link to share it. In this step it's important to change the setting so that anyone with the link can open it.</p>
+										<p>A way around this was to upload my CV to Google Drive and copy the link to share it. 
+											In this step it's important to change the setting so that anyone with the link can open it.</p>
 											<img src = "images/googledrive.png"
 											style="object-fit:contain;
 												width:80%;
 												height:auto;
 												border:solid 3px #CCC"/>
-										<p>Then I used the same code from above, <pre><code>&lt; iframe src="insert the google drive link here"></code></pre> To make sure this method works you'll have to change the ending of the link from ../view?usp=sharing to .../preview . A more detailed description of this method can be found <a href="https://www.wonderplugin.com/wordpress-lightbox/how-to-open-a-pdf-file-hosted-on-google-drive-in-a-wordpress-lightbox/">here</a></p>.
+										<p>Then I used the same code from above, <pre><code>&lt; iframe src="insert the google drive link here"></code></pre> 
+											To make sure this method works you'll have to change the ending of the link from <b>../view?usp=sharing</b> to <b>.../preview</b>. 
+											A more detailed description of this method can be found <a href="https://www.wonderplugin.com/wordpress-lightbox/how-to-open-a-pdf-file-hosted-on-google-drive-in-a-wordpress-lightbox/">here</a></p>.
 									</dd>
+									<dt><h4>Adding references within the same file</h4></dt>
+										<dd><p>To add references within the same file I added a <code>&lt;div id = 'some_name'>&lt;div></code> to all of the sections. 
+											Then for the reference I wrote <code>&lt;a href="#some_name">&lt;/a></code>. </dd>
 								</dl>
 								<h3 id="layout"> Changing the Layout </h3>
-								<p>I have a very fixed idea on how I want the website to look. I want the sidebanner to be fixed on the side. I haven't been able to do that yet but hopefully I'll be able to figure it out in the upcoming weeks, stay tuned!</p>
-								</section>
+								<p>I have a strong vision on how I want the website to look. I want the sidebanner to be fixed on the side. I haven't been able to do that just yet but hopefully I'll be able to figure it out in the upcoming weeks.</p>
 
-								<section>
+
+							</div>
+
+								<div id = "03_uploading">
 									<h2>Uploading the website to GitHub </h2>	
-									<p>I started by downloading Git from <a href="https://git-scm.com/">this </a> website. Then I opened the terminal and went to the directory of where my files for the website are stored. I did that by using the command</p>
-									<pre><code>cd C:Users/Documents/GitHub/VEL608G/proj1</code></pre>
-									<p>Then I went to GitHub and created a new respiratory and filled in the following.</p>
-										<img src = "images/GitHub_resp.png"
-										style="object-fit:contain;
-											width:80%;
-											height:auto;
-											border:solid 3px #CCC"/>
-									<p>and after creating the respiratory I was directed to the following page and copied the code as shown and pasted it to git.</p>
-										<img src = "images/copiedcode.png"
-										style="object-fit:contain;
-											width:80%;
-											height:auto;
-											border:solid 3px #CCC"/>
-									<p>This command only uploaded a README.md file to GitHub but I didn't see any visible errors in my code. I ended up looking at websites from former students to see if anyone else had this problem. I looked at <a href="https://saemi10.github.io/TolvustuddFramleidsla/V1.html" > Sæmundur's website </a> who was in this course in 2021 and he had a similiar problem and found a way to solve it. He used the following code: </p>
+									<dl>
+										<dt><h4>1 - Download and open GitBash</h4></dt>
+										<dd>
+											<p>I started by downloading Git from <a href="https://git-scm.com/">this </a> website. 
+												Then I located the local folder, right clicked on it's name and selected 'Open in GitBash.</p>
+										</dd>
+										<dt><h4>2 - Create a Repository on GitHub</h4></dt>
+										<dd>
+											<p>Then I went to GitHub and created a new respiratory and filled in the following.</p>
+											<img src = "images/GitHub_resp.png"style="object-fit:contain;width:60% ;height:auto;border:solid 3px #CCC"/>
+										</dd>
+										<dt><h4>3 - Uploading the files to GitHub </h4></dt>
+										<dd>
+											<p>After creating the respiratory I was directed to the following page and copied the code as shown and pasted it to git.</p>
+										<img src = "images/copiedcode.png"style="object-fit:contain;width:100%;height:auto;border:solid 3px #CCC"/>
+										<p>This command only uploaded a README.md file to GitHub but I didn't see any visible errors in my code. 
+											I ended up looking at websites from former students to see if anyone else had this problem. 
+											I looked at <a href="https://saemi10.github.io/TolvustuddFramleidsla/V1.html" > Sæmundur's website </a> 
+											who was in this course in 2021 and he had a similiar problem and found a way to solve it. 
+											He used the following code: </p>
+											<pre><code>git commit -m 'fixes' --allow-empty
+												git push</code></pre>
+																					<p>and then I repeated the code given on GitHub. This worked and all my files were uploaded to GitHub! Then I published the website from the settings bar on the right side and selected "pages" where I changed "source" from "None" to "main". At first when I clicked the link I got the following page</p>
+																					<img src = "images/Pages_main_none.png"
+																					style="object-fit:contain;
+																						width:100%;
+																						height:auto;
+																						border:solid 3px #CCC"/>
+																					<p>but when I refreshed I got the website to work!</p>
 
-									<pre><code>git commit -m 'fixes' --allow-empty
+										</dd>
+									</dl>
+									<p> 
+										
+
+									
+
+									</div>
+								<div id="04_updating">
+									<header><h2>Adding changes to the website</h2></header>
+									
+									<p>Over the last couple of weeks I've been making gradual changes to the website in a local file on my computer. 
+										Instead of committing and pushing the changes to git consistantly, I decided to commit and push everything at the same time when
+										I'd finished the projects. To upload the projects to Git I wrote the following in GitBash: 
+										<pre><code>git add .
+git commit -m 'description of what changes you made'
 git push</code></pre>
-									<p>and then I repeated the code given on GitHub. This worked and all my files were uploaded to GitHub! Then I published the website from the settings bar on the right side and selected "pages" where I changed "source" from "None" to "main". At first when I clicked the link I got the following page</p>
-									<img src = "images/Pages_main_none.png"
-									style="object-fit:contain;
-										width:80%;
-										height:auto;
-										border:solid 3px #CCC"/>
-									<p>but when I refreshed I got the website to work!</p>
 
-								</section>
+										
+										
+										When I did that I got an error. I couldn't push the changes because I had accidentally saved a video in the local folder which was larger 
+										than the maximum allowed file size. Even though I deleted the video, the error persisted because it was still in the history of the repository. 
+										I tried googling this problem but nothing I found seemed to work. In the end I got a bit frustrated with the whole thing and found an article online 
+										talked about how to delete the changes that had been made to the repository since the plast git push. I decided to follow their instructions which led me
+										 to hard reset the whole repository, meaning all of the changes I had made got deleted from my local folder, even the pictures I had used were 
+										 gone from my computer. I realized how extremely stupid it was to hard reset the whole thing but I just thought GitBash didn't have permission to 
+										 make changes to files that were saved locally on your computer. When googling this problem it seemed like the work I had put into this was lost for good. 
+										 Just before I started writing everything again I decided to talked to Hafliði about this issue, which I am very glad I did. After some googling 
+										 he was able to recover all of the files I had lost, here you can see the steps we had to take to recover the files. </p>
+										<img src = "images/Kaka_vol1.png" style="image-fit:contain;width:100% ; height:auto;border:solid 3px #CCC"/>
+										<p><strong>LESSON LEARNED: </strong> Don't hard reset the repository even though there are some things that you want to delete from it. 
+										I also figured out that it is a good idea to keep a copy of the files in another folder that is not directly connected to the repository just in case.</p>
 
-							<section><h3>Googles: </h3> 
-								<p>Scale Pictures in HTML</p><br>
-								<p>Displaying html code in a html file</p>
+									
+
+
+
+										</div>
+
+							<section><h3>Look-ups: </h3> 
+								<ul class="actions">
+									<li><a href="#" class="button primary">Scale Pictures HTML </a></li>
+									<li><a href="#" class="button">GitHub website not showing </a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button">Displaying code HTML </a></li>
+									<li><a href="#" class="button primary"> Fixed sidebanner in HTML </a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button primary">Embed a PDF document into a HTML </a></li>
+									<li><a href="#" class="button"> Formatting in HTML </a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button primary">Recover after hard reset, gitbash </a></li>
+									<li><a href="#" class="button"> Add href within the same document </a></li>
+								</ul>
 							</section>
 
 						</div>
@@ -162,23 +242,28 @@ git push</code></pre>
 								</ul>
 							</nav>
 						<!-- Projects in the Side Banner!! -->
-							<section>
-								<header class="major">
-									<h3>Projects</h3>
-								</header>
-								<div class="mini-posts">
-									<article>
-										<a href="02_vefsida.html" class="image"><img src="images/cover_proj1.png" alt="" /></a>
-										<h2> Project 1 </h2>
-										<p>The making of this website with HTML </p>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-										<h2>Project 2</h2>
-										<p> This project is still in progress, will be posted on the 27th of February. </p>
-									</article>
-								</div>
-							</section>
+						<section>
+							<header class="major">
+								<h3>Main Projects</h3>
+							</header>
+							<div class="mini-posts">
+								<article>
+									<a href="02_vefsida.html" class="image fit"><img src="images/cover_proj1.png" alt="" /></a>
+									<h2> Project 1 </h2>
+									<p>The making of this website with HTML </p>
+								</article>
+								<article>
+									<a href="#" class="image fit"><img src="images/V02/kaka_cover.jpg" alt="" /></a>
+									<h2>Project 2</h2>
+									<p> Design a press fit model and print using a laser cutter </p>
+								</article>
+								<article>
+									<a href="#" class="image fit"><img src="images/V02/tannb_cover.jpg" alt="" /></a>
+									<h2>Project 3</h2>
+									<p> Design a 3D model and print it using a 3D printer</p>
+								</article>
+							</div>
+						</section>
 
 						<!-- Section -->
 						<section>
@@ -203,12 +288,12 @@ git push</code></pre>
 
 		</div>
 
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-</body>
+	</body>
 </html>
