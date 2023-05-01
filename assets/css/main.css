@@ -259,6 +259,19 @@ hr {
 .align-right {
   text-align: right; }
 
+  .container {
+    display: flex;
+  }
+  
+  .model {
+    width: 50%;
+    margin-right: 10px;
+  }
+  
+  .model:last-child {
+    margin-right: 0;
+  }
+
 /* Row */
 .row {
   display: flex;
